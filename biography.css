@@ -125,7 +125,7 @@
 .biography-buttons {
     display: flex;
     flex-direction: row;
-    column-gap: 1.0rem;
+    gap: 1.0rem;
 }
 .biography-buttons .button {
     text-decoration: none;

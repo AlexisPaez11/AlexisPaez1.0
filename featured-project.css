@@ -70,7 +70,7 @@
 .featured-project-technologies {
     display: flex;
     flex-direction: row;
-    column-gap: 1.0rem;
+    column-gap: .8rem;
 }
 .featured-project-technologies div {
     display: flex;
@@ -83,8 +83,8 @@
     -o-border-radius: .8rem;
 }
 .featured-project-technologies div svg {
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 1.6rem;
+    width: 1.6rem;
 }
 
 /* PROJECT INFO BUTTONS */
