@@ -32,9 +32,8 @@ body {
     max-width: 1280px;
     background-color: var(--gray1-color);
     overflow-x: hidden;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
-
 
 
 /* SECTION 1 */

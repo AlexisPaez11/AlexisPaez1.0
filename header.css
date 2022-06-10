@@ -134,7 +134,7 @@ nav .toggle {
         padding: 2.0rem 0;
         display: flex;
         justify-content: right;
-        height: 7.4rem;
+        height: 7.433em;
         transition: all .5s;
         -webkit-transition: all .5s;
         -moz-transition: all .5s;
@@ -148,13 +148,13 @@ nav .toggle {
         width: 100%;
         background-color: var(--gray1-color);
         position: fixed;
-        height: calc(100% - 7.4rem);
-        top: 7.4rem;
+        height: calc(100% - 7.433rem);
+        top: 7.433rem;
         display: flex;
         flex-direction: column;
         justify-content: left;
         align-content: center;
-        top: 7.4rem;
+        top: 7.433rem;
         overflow: scroll;
         transition: all .5s;
         -webkit-transition: all .5s;
@@ -205,7 +205,7 @@ nav .toggle {
     }
 
     /* NAV MENU DISIBLE */
-    nav .nav-menu_disabled {
+        nav .nav-menu_disabled {
         top: 100%;
         transition: all .5s;
         -webkit-transition: all .5s;

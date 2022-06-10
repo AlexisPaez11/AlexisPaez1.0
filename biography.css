@@ -1,6 +1,7 @@
 /* SECTION */
 .section-biography {
     width: 100%;
+    margin: 5.0rem 0;
     padding: 7.5rem 8.0rem;
     display: flex;
     flex-direction: row;
@@ -154,7 +155,7 @@
     width: 28.0rem;
     height: 27.1rem;
 }
-.biography-avatar picture img {
+.biography-avatar img {
     height: 100%;
 }
 
