@@ -11,7 +11,6 @@
     -moz-transition: all .5s;
     -ms-transition: all .5s;
     -o-transition: all .5s;
-    overflow-x: hidden;
 }
 
 /* SECTION TITLE / BUTTONS*/
@@ -65,6 +64,7 @@
     flex-direction: row;
     justify-content: start;
     gap: 2rem;
+    overflow-x: hidden;
 }
 
 .project {
@@ -191,12 +191,6 @@
 }
 .see-more-button svg path {
     fill: var(--white-color);
-}
-
-@media (max-width: 1100px) {
-    .projects-buttons .button:nth-child(2) {
-        background-color: var(--blue-color);
-    }    
 }
 
 @media (max-width: 650px) {

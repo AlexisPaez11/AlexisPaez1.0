@@ -10,8 +10,8 @@ nav {
     width: 100%;
     padding: 2.0rem 8.0rem;
     display: flex;
-    justify-content: right;
-    gap: 15.2rem;
+    justify-content:    center;
+    /* gap: 15.2rem; */
     align-content: center;
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -162,7 +162,6 @@ nav .toggle {
         -ms-transition: all .5s;
         -o-transition: all .5s;
     }
-  
     nav .nav-menu .nav-menu-item {
         width: 100%;
         border-bottom: 2px solid var(--gray3-color);
