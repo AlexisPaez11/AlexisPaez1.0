@@ -145,10 +145,10 @@ nav .toggle {
     /* NAV MENU */
     nav .nav-menu {
         z-index: 1;
-        width: 100%;
+        width: 100vh;
         background-color: var(--gray1-color);
         position: fixed;
-        height: calc(100% - 7.433rem);
+        height: calc(100vh - 7.433rem);
         top: 7.433rem;
         display: flex;
         flex-direction: column;
@@ -162,6 +162,7 @@ nav .toggle {
         -ms-transition: all .5s;
         -o-transition: all .5s;
     }
+  
     nav .nav-menu .nav-menu-item {
         width: 100%;
         border-bottom: 2px solid var(--gray3-color);
