@@ -15,11 +15,17 @@
 
 /* SECTION TITLE / BUTTONS*/
 .projects-top {
-    width: calc(100% - 8.0rem);
+    width: 100%;
+    padding-right: 8rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
 }
 
 .section-projects h2 {
@@ -195,19 +201,25 @@
 
 @media (max-width: 650px) {
     .section-projects {
-        padding: 5.0rem 2.0rem;
+        padding: 5.0rem 0rem 5.0rem 2.0rem;
     }
-
+    
     .projects-top {
         width: 100%;
+        padding-right: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
     }
 
     .project {
         width: 26.0rem;
-        height: 31.167rem;
+        /* height: 31.167rem; */
     }
     
     /* PROJECT IMG */
