@@ -201,10 +201,5 @@ nav .toggle {
     /* NAV MENU DISIBLE */
         nav .nav-menu_disabled {
         top: 100%;
-        transition: all .5s;
-        -webkit-transition: all .5s;
-        -moz-transition: all .5s;
-        -ms-transition: all .5s;
-        -o-transition: all .5s;
     }
 }
