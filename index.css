@@ -10,7 +10,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    scrollbar-width: initial;
+    scrollbar-width: none;
 
     
     --gray1-color: #1F2028;
