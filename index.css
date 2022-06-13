@@ -10,7 +10,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    scrollbar-width: none;
+    scrollbar-width: initial;
 
     
     --gray1-color: #1F2028;
@@ -34,11 +34,6 @@ body {
     overflow-x: hidden;
     margin: 0 auto;
 }
-
-/* body::-webkit-scrollbar {
-    display: none;
-} */
-
 
 /* SECTION 1 */
 

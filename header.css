@@ -134,7 +134,7 @@ nav .toggle {
         padding: 2.0rem 0;
         display: flex;
         justify-content: right;
-        height: 7.433em;
+        height: 7.433rem;
         transition: all .5s;
         -webkit-transition: all .5s;
         -moz-transition: all .5s;
@@ -144,17 +144,22 @@ nav .toggle {
 
     /* NAV MENU */
     nav .nav-menu {
-        z-index: 1;
+        z-index: 90;
         width: 100%;
         background-color: var(--gray1-color);
         position: fixed;
-        height: 150%;
-        top: 7.433rem;
+        height: calc(100% + 30rem);
+        top: 7.4rem;
         display: flex;
         flex-direction: column;
         justify-content: left;
         align-content: center;
-        overflow-y: auto;
+        overflow-y: hidden;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
     }
     nav .nav-menu .nav-menu-item {
         width: 100%;
@@ -201,5 +206,10 @@ nav .toggle {
     /* NAV MENU DISIBLE */
         nav .nav-menu_disabled {
         top: 100%;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
     }
 }
