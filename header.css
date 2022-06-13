@@ -154,8 +154,7 @@ nav .toggle {
         flex-direction: column;
         justify-content: left;
         align-content: center;
-        top: 7.433rem;
-        overflow: scroll;
+        overflow-y: auto;
         transition: all .5s;
         -webkit-transition: all .5s;
         -moz-transition: all .5s;
