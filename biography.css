@@ -1,8 +1,8 @@
 /* SECTION */
 .section-biography {
     width: 100%;
-    margin: 5.0rem 0;
-    padding: 7.5rem 8.0rem;
+    margin: 8.0rem 0;
+    padding: 4rem 8rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -166,6 +166,6 @@
 
 @media (max-width: 650px) {
     .section-biography {
-        padding: 5.0rem 2.0rem;
+        padding: 4rem 2rem;
     }
 }

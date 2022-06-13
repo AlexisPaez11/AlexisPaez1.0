@@ -1,7 +1,7 @@
 /* SECTION */
 .section-featured-project {
     width: 100%;
-    padding: 5rem 8.0rem;
+    padding: 4rem 8.0rem;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -127,6 +127,6 @@
 
 @media (max-width: 650px) {
     .section-featured-project {
-        padding: 5.0rem 2.0rem;
+        padding: 4.0rem 2.0rem;
     }
 }

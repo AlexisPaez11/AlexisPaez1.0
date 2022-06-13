@@ -16,17 +16,17 @@
     <header>
         <nav>
             <ul class="nav-menu nav-menu_disabled">
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link underlined">Projects</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link underlined">Blog</a></li>
-                <li class="nav-menu-item nav-menu-logo"><a href="#" class="nav-menu-link">
+                <li class="nav-menu-item"><a href="projects.html" class="nav-menu-link underlined">Projects</a></li>
+                <li class="nav-menu-item"><a href="blog.html" class="nav-menu-link underlined">Blog</a></li>
+                <li class="nav-menu-item nav-menu-logo"><a href="" class="nav-menu-link">
                     <svg viewBox="0 -4 68 70" xmlns="http://www.w3.org/2000/svg">
                         <path d="M48 45.5L40 31.5H42C45.866 31.5 49 28.366 49 24.5V24.5C49 20.634 45.866 17.5 42 17.5H32.5L23.5 1H44.175C54.5999 1 63.6359 8.21707 65.9404 18.384V18.384C68.5146 29.7408 61.9241 41.1681 50.8048 44.6274L48 45.5Z"/>
                         <path d="M21 1.5L57 70H38.5L13 21L21 1.5Z"/>
                         <path d="M8.5 31.5H15.5L24 47.5H1.5L8.5 31.5Z"/>
                     </svg>
                 </a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link underlined">Services</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link underlined">Contact</a></li>
+                <li class="nav-menu-item"><a href="#section-services" class="nav-menu-link underlined">Services</a></li>
+                <li class="nav-menu-item"><a href="#section-contact" class="nav-menu-link underlined">Contact</a></li>
             </ul>
 
             <button class="toggle">
@@ -36,7 +36,8 @@
     </header>
 
     <main>
-        <section id="biography" class="main-section section-biography">
+        <!-- BIOGRAPHY -->
+        <section class="main-section section-biography">
             <div class="biography-info">
                 <h1>Hi, I’m <span>Alexis Paez<span class="last-letter"></span></span></h1>
                 <h2>Front End Developer / UI Designer<span class="last-letter"></span></h2>
@@ -58,7 +59,7 @@
 
                 <div class="biography-buttons">
                     <a href="#" class="button">DOWNLOAD CV</a>
-                    <a href="#" class="button">CONTACT ME</a>
+                    <a href="#section-contact" class="button">CONTACT ME</a>
                 </div>
             </div>
 
@@ -67,7 +68,8 @@
             </picture>
         </section>
 
-        <section id="featured-project" class="main-section section-featured-project">
+        <!-- FEATURED PROJECT -->
+        <section class="main-section section-featured-project">
             <picture class="featured-project-img">
                 <img src="assets/youtube-clone-feature-project.png" alt="">
             </picture>
@@ -98,8 +100,9 @@
             </div>
         </section>
 
-        <section id="article" class="main-section section-article">
-            <div class="section-article-top">
+        <!-- PROJECTS -->
+        <section class="main-section section-articles">
+            <div class="section-articles-top">
                 <h2>PROJECTS</h2>
                 <div class="arrow-buttons">
                     <div href="#" class="button">
@@ -173,8 +176,9 @@
             </div>
         </section>
 
-        <section id="article" class="main-section section-article">
-            <div class="section-article-top">
+        <!-- BLOG -->
+        <section class="main-section section-articles">
+            <div class="section-articles-top">
                 <h2>BLOG</h2>
                 <div class="arrow-buttons">
                     <div href="#" class="button">
@@ -239,6 +243,38 @@
                 </a>
 
             </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="section-contact" class="main-section section-contact">
+            <div class="section-contact-top">
+                <h3>CONTACT ME</h3>
+                <p>I am interested in freelance opportunities and the possibility of joining a team of developers. However, if you have another request or question, don't hesitate to use the form.</p>
+            </div>
+
+            <form id="form" class="form" action="">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="person@example.com" required>  
+                </div>
+
+                <div class="subject">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" placeholder="No subject" required>
+                </div>
+
+                <div class="message">
+                    <label for="massage">Message</label>
+                    <textarea id="massage" name="massage" placeholder="Leave your message.." required></textarea>
+                </div>
+
+                <button class="submit" type="submit">SEND MESSAGE</button>
+            </form>
         </section>
 
     </main>
