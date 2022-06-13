@@ -155,11 +155,6 @@ nav .toggle {
         justify-content: left;
         align-content: center;
         overflow-y: auto;
-        transition: all .5s;
-        -webkit-transition: all .5s;
-        -moz-transition: all .5s;
-        -ms-transition: all .5s;
-        -o-transition: all .5s;
     }
     nav .nav-menu .nav-menu-item {
         width: 100%;
