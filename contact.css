@@ -36,6 +36,8 @@
 }
 
 .section-contact-top p {
+    min-width: 31.6rem;
+    max-width: 55.0rem;
     color: var(--gray6-color);
     font-family: Inter;
     font-weight: 500;
@@ -50,7 +52,7 @@
     grid-template-areas:
     "name message"
     "email message"
-    "submit sbumit";
+    "submit empty";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 6.7rem 6.7rem 3.8rem;
     flex-direction: column;
@@ -163,7 +165,8 @@
 }
 
 .section-contact .submit {
-    width: 16.0rem;
+    cursor: pointer;
+    width: 12rem;
     height: 3.8rem;
     color: var(--white-color);
     background-color: var(--blue-color);
@@ -195,6 +198,10 @@
 @media (max-width: 650px) {
     .section-contact {
         padding: 4rem 2rem 4rem 2rem;
+    }
+
+    .section-contact-top p {
+        min-width: 26.0rem;
     }
 
     .section-contact form {

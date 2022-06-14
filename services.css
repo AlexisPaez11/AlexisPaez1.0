@@ -80,6 +80,6 @@
     }
 
     .service {
-        width: 26.0rem;
+        min-width: 26.0rem;
     }
 }
