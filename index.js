@@ -14,6 +14,7 @@ function scrollUp() {
     if (currentScroll > 0) {
         window.requestAnimationFrame(scrollUp);
         window.scrollTo (0, currentScroll - (currentScroll / 2));
+        buttonUp.style.transform = "scale(0)";
     }
 }
 
