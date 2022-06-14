@@ -3,7 +3,9 @@
 @import url(./biography.css);
 @import url(./featured-project.css);
 @import url(./articles.css);
+@import url(./services.css);
 @import url(./contact.css);
+@import url(./about.css);
 @import url(./footer.css);
 
 * {

@@ -13,7 +13,7 @@
     -o-transition: all .5s;
 }
 
-/* ARTICLE TITLE - BUTTONS*/
+/* ARTICLE TITLE - BUTTONS */
 .section-articles-top {
     width: 100%;
     padding-right: 8rem;
@@ -128,7 +128,7 @@
     gap: .8rem;
 }
 
-.article-info .title-project {
+.article-project .article-info .project-title {
     color: var(--white-color);
     font-family: Inter;
     font-weight: 700;
@@ -139,7 +139,7 @@
     text-overflow: ellipsis;
 }
 
-.article-info .title-blog {
+.article-blog .article-info .article-title {
     color: var(--white-color);
     font-family: Inter;
     font-weight: 700;

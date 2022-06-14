@@ -180,7 +180,7 @@ nav .toggle {
     }
     nav .nav-menu .nav-menu-item .nav-menu-link {
         width: 100%;
-        padding: 3.5rem 2.0rem;
+        padding: 4rem 2.0rem;
         font-weight: 500;
         font-size: 2.0rem;
         line-height: 2.0rem;
@@ -188,7 +188,7 @@ nav .toggle {
     nav .nav-menu .nav-menu-item .nav-menu-link:hover {
         background-color: var(--gray3-color);
     }
-    nav .nav-menu .nav-menu-item:nth-child(3) {
+    nav .nav-menu .nav-menu-item:nth-child(4) {
         order: -1;
     }
     .nav-menu-logo svg {

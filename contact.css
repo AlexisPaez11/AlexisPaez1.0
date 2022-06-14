@@ -27,7 +27,7 @@
     -o-transition: all .5s;
 }
 
-.section-contact-top h3 {
+.section-contact-top h2 {
     color: var(--white-color);
     font-family: Inter;
     font-weight: 900;
