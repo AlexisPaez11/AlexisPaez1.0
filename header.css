@@ -159,6 +159,7 @@ nav .toggle {
         position: fixed;
         height: 100%;
         top: 7.4rem;
+        padding-bottom: 7.4rem;
         display: flex;
         flex-direction: column;
         justify-content: left;
