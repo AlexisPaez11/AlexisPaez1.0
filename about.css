@@ -28,9 +28,20 @@
     line-height: 2.2rem;
 }
 
+/* ABOUT CONTAINER */
+.about-container {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 4fr 2fr;
+    gap: 2rem;
+}
+
 /* ABOUT INFO */
 .section-about-info {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .section-about-info p {
@@ -41,8 +52,49 @@
     line-height: 2.0rem;
 }
 
-/* ABOUT SKILLS */
+/* SKILLS */
 .section-about-skills {
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+
+.about-skills {
+    display: flex;
+    position: relative;
+    height: 260px;
+    width: 260px;
+    outline: 2px solid var(--gray4-color);
+    outline-offset: -50px;
+    border: 2px solid var(--gray4-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.skills-icon {
+    display: flex;
+    position: absolute;
+    height: 4.0rem;
+    width: 4.0rem;
+    background-color: var(--gray4-color);
+    padding: .8rem;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+}
+
+.skills-icon svg {
+    height: 100%;
+    width: 100%;
+}
+
+/* SKILLS */
+.about-skills-container {
     display: grid;
     grid-auto-flow: column;
     gap: 2rem;
@@ -82,17 +134,30 @@
     -o-border-radius: .8rem;
 }
 
+@media (max-width: 960px) {
+    .about-container {
+        width: 100%;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 4rem;
+    }
+
+    .about-skills-container {
+        width: 100%;
+        display: flex;
+        place-content: center left;
+    }
+}
+
 @media (max-width: 650px) {
     .section-about {
         padding: 4.0rem 2.0rem 4.0rem 2.0rem;
     }
 
-    .section-about-info {
-        width: 100%;
-    }
-
     /* ABOUT SKILLS */
-    .section-about-skills {
+    .about-skills-container {
         display: grid;
         grid-auto-flow: row;
         gap: 2rem;

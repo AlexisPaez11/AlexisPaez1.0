@@ -23,6 +23,7 @@
     --gray6-color: #909090;
     --white-color: #FFF;
     --blue-color: #07ADEF;
+    /* --blue-color: burlywood; */
 }
 
 html {
@@ -36,6 +37,20 @@ body {
     overflow-x: hidden;
     margin: 0 auto;
 }
+
+hr {
+    margin: 0 auto;
+    width: calc(100% - 16.0rem);
+    border: 1px solid var(--gray4-color);
+}
+
+@media (max-width: 650px) {
+    hr {
+        width: calc(100% - 4.0rem);
+    }
+}
+
+
 
 /* SECTION 1 */
 
