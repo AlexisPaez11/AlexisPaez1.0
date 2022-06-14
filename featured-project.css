@@ -60,10 +60,11 @@
     font-size: 3.2rem;
 }
 .featured-project-info .description {
-    color: var(--gray5-color);
+    color: var(--gray6-color);
     font-family: Inter;
     font-weight: 500;
     font-size: 1.6rem;
+    line-height: 2.0rem;
 }
 
 /* PROJECT INFO TECHNOLOGIES */
