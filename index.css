@@ -75,6 +75,10 @@ hr {
 }
 
 @media (max-width: 650px) {
+    #button-up {
+        right: 20px;
+    }
+
     hr {
         width: calc(100% - 4.0rem);
     }
