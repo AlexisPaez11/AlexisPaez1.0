@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -109,17 +110,18 @@
             <div class="section-articles-top">
                 <h2>PROJECTOS</h2>
                 <div class="arrow-buttons">
-                    <div href="#" class="button">
+                    <div href="#" class="button swiper-button-prev-projects">
                         <span class="iconify" data-icon="ep:arrow-left-bold"></span>
                     </div>
-                    <div href="#" class="button">
+                    <div href="#" class="button swiper-button-next-projects">
                         <span class="iconify" data-icon="ep:arrow-right-bold"></span>
                     </div>
                 </div>
             </div>
 
-            <div class="articles">
-                <article class="article article-project"> 
+            <div class="swiper mySwiperProjects">
+            <div class="swiper-wrapper">
+                <article class="swiper-slide article article-project">
                     <picture class="article-img">
                         <img src="assets/youtube-clone.png" alt="">
                     </picture>
@@ -131,7 +133,7 @@
                             <div class="technologies-item">
                                 <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
                             </div>
-        
+
                             <div class="technologies-item">
                                 <span class="iconify" data-icon="vscode-icons:file-type-css"></span>
                             </div>
@@ -148,7 +150,7 @@
                     </div>
                 </article>
 
-                <article class="article article-project"> 
+                <article class="swiper-slide article article-project">
                     <picture class="article-img">
                         <img src="assets/twitter-clone.png" alt="">
                     </picture>
@@ -160,7 +162,7 @@
                             <div class="technologies-item">
                                 <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
                             </div>
-        
+
                             <div class="technologies-item">
                                 <span class="iconify" data-icon="vscode-icons:file-type-css"></span>
                             </div>
@@ -172,31 +174,33 @@
                         </div>
                     </div>
                 </article>
-
-                <a href="#" class="see-more-button">
+                
+                <a href="projectos.html" class="swiper-slide see-more-button">
                     <span class="iconify" data-icon="heroicons-solid:view-grid-add"></span>
                 </a>
+            </div>
             </div>
         </section>
 
         <hr>
 
-        <!-- BLOG -->
+        <!-- BLOG    -->
         <section class="main-section section-articles">
             <div class="section-articles-top">
                 <h2>BLOG</h2>
                 <div class="arrow-buttons">
-                    <div href="#" class="button">
+                    <div href="#" class="button swiper-button-prev-blog">
                         <span class="iconify" data-icon="ep:arrow-left-bold"></span>
                     </div>
-                    <div href="#" class="button">
+                    <div href="#" class="button swiper-button-next-blog">
                         <span class="iconify" data-icon="ep:arrow-right-bold"></span>
                     </div>
                 </div>
             </div>
 
-            <div class="articles">
-                <a href="#">
+            <div class="swiper mySwiperBlog">
+            <div class="swiper-wrapper articles">
+                <a href="#" class="swiper-slide">
                     <article class="article article-blog"> 
                         <picture class="article-img">
                             <img src="assets/blog-assets/chrome-devtools.jpg" alt="">
@@ -207,8 +211,8 @@
                         </div>
                     </article>
                 </a>
-                
-                <a href="#">
+
+                <a href="#" class="swiper-slide">
                     <article class="article article-blog"> 
                         <picture class="article-img">
                             <img src="assets/blog-assets/vuejs.jpg" alt="">
@@ -220,7 +224,7 @@
                     </article>
                 </a>
 
-                <a href="#">
+                <a href="#" class="swiper-slide">
                     <article class="article article-blog"> 
                         <picture class="article-img">
                             <img src="assets/blog-assets/webpack.jpg" alt="">
@@ -231,7 +235,7 @@
                     </article>
                 </a>
 
-                <a href="#">
+                <a href="#" class="swiper-slide">
                     <article class="article article-blog"> 
                         <picture class="article-img">
                             <img src="assets/blog-assets/git.jpg" alt="">
@@ -241,12 +245,25 @@
                             <h3 class="article-title">Buenas prácticas para escribir commits en Git</h3>
                         </div>
                     </article>
-                </a>        
+                </a>
 
-                <a href="#" class="see-more-button">
+                <a href="#" class="swiper-slide">
+                    <article class="article article-blog"> 
+                        <picture class="article-img">
+                            <img src="assets/blog-assets/javascript.jpg" alt="">
+                        </picture>
+
+                        <div class="article-info">
+                            <h3 class="article-title">Cómo usar async/await con el método .map de los Arrays</h3></div>
+                    </article>
+                </a>
+
+                <a href="blog.html" class="swiper-slide see-more-button">
                     <span class="iconify" data-icon="heroicons-solid:view-grid-add"></span>
                 </a>
             </div>
+        </div>
+    </div>
         </section>
 
         <hr>
@@ -375,9 +392,9 @@
     </main>
 
     <!-- BUTTON UP -->
-        <div id="button-up">
-            <span class="iconify" data-icon="ep:arrow-up-bold"></span>
-        </div>
+    <div id="button-up">
+        <span class="iconify" data-icon="ep:arrow-up-bold"></span>
+    </div>
     
     <hr>
 
