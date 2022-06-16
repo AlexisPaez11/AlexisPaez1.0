@@ -17,10 +17,10 @@
     <header>
         <nav>
             <ul class="nav-menu nav-menu_disabled">
-                <li class="nav-menu-item"><a href="" class="nav-menu-link underlined">Inicio</a></li>
+                <li class="nav-menu-item"><a href="index.html" class="nav-menu-link active underlined">Inicio</a></li>
                 <li class="nav-menu-item"><a href="projects.html" class="nav-menu-link underlined">Projectos</a></li>
                 <li class="nav-menu-item"><a href="blog.html" class="nav-menu-link underlined">Blog</a></li>
-                <li class="nav-menu-item nav-menu-logo"><a href="" class="nav-menu-link">
+                <li class="nav-menu-item nav-menu-logo"><a href="index.html" class="nav-menu-link">
                     <svg viewBox="0 -4 68 70" xmlns="http://www.w3.org/2000/svg">
                         <path d="M48 45.5L40 31.5H42C45.866 31.5 49 28.366 49 24.5V24.5C49 20.634 45.866 17.5 42 17.5H32.5L23.5 1H44.175C54.5999 1 63.6359 8.21707 65.9404 18.384V18.384C68.5146 29.7408 61.9241 41.1681 50.8048 44.6274L48 45.5Z"/>
                         <path d="M21 1.5L57 70H38.5L13 21L21 1.5Z"/>
@@ -120,7 +120,7 @@
             </div>
 
             <div class="swiper mySwiperProjects">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper articles">
                 <article class="swiper-slide article article-project">
                     <picture class="article-img">
                         <img src="assets/youtube-clone.png" alt="">
@@ -146,6 +146,31 @@
                         <div class="article-buttons">
                             <a href="https://github.com/AlexisPaez11/Youtube" class="button">REPOSITORIO</a>
                             <a href="https://alexispaez11.github.io/Youtube/" class="button">VISITAR SITIO</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="swiper-slide article article-project">
+                    <picture class="article-img">
+                        <img src="assets/twitter-clone.png" alt="">
+                    </picture>
+
+                    <div class="article-info">
+                        <h3 class="project-title">Twitter Clone</h3>
+                        
+                        <div class="article-technologies">
+                            <div class="technologies-item">
+                                <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
+                            </div>
+
+                            <div class="technologies-item">
+                                <span class="iconify" data-icon="vscode-icons:file-type-css"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="article-buttons">
+                            <a href="#" class="button">REPOSITORIO</a>
+                            <a href="#" class="button">VISITAR SITIO</a>
                         </div>
                     </div>
                 </article>
@@ -208,6 +233,7 @@
                         
                         <div class="article-info">
                             <h3 class="article-title">Novedades en DevTools (Chrome 103)</h3>
+                            <time datetime="2022-06-20">Junio 20, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -220,6 +246,7 @@
 
                         <div class="article-info">
                             <h3 class="article-title">Desarrollo basado en Componentes con Vue.js</h3>
+                            <time datetime="2022-06-20">Junio 20, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -231,7 +258,9 @@
                         </picture>
 
                         <div class="article-info">
-                            <h3 class="article-title">Primeros pasos con Webpack</h3></div>
+                            <h3 class="article-title">Primeros pasos con Webpack</h3>
+                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                        </div>
                     </article>
                 </a>
 
@@ -243,6 +272,7 @@
                         
                         <div class="article-info">
                             <h3 class="article-title">Buenas prácticas para escribir commits en Git</h3>
+                            <time datetime="2022-06-20">Junio 20, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -254,7 +284,21 @@
                         </picture>
 
                         <div class="article-info">
-                            <h3 class="article-title">Cómo usar async/await con el método .map de los Arrays</h3></div>
+                            <h3 class="article-title">Cómo usar async/await con el método .map de los Arrays</h3>
+                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="#" class="swiper-slide">
+                    <article class="article article-blog"> 
+                        <picture class="article-img">
+                            <img src="assets/blog-assets/next.jpg" alt="">
+                        </picture>
+
+                        <div class="article-info">
+                            <h3 class="article-title">Cómo usar rutas absolutas en los imports en Next.js</h3></div>
+                            <time datetime="2022-06-20">Junio 20, 2022</time>
                     </article>
                 </a>
 
@@ -262,8 +306,7 @@
                     <span class="iconify" data-icon="heroicons-solid:view-grid-add"></span>
                 </a>
             </div>
-        </div>
-    </div>
+            </div>
         </section>
 
         <hr>
