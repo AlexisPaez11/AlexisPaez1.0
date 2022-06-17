@@ -85,12 +85,8 @@
     -o-border-radius: .8rem;
 }
 
-.article-project {
-    height: 29.821rem;
-}
-
-.article-blog {
-    /* height: 26.473rem; */
+.article-blog:hover {
+    background-color: #2E303990;
 }
 
 /* PROJECT IMG / BLOG IMG */
@@ -198,6 +194,9 @@
     -moz-border-radius: .8rem;
     -ms-border-radius: .8rem;
     -o-border-radius: .8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .article-buttons .button:nth-child(1) {
     color: var(--gray5-color);
