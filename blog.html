@@ -39,12 +39,34 @@
     </header>
 
     <main>
+        <!-- PAGE TITLE -->
+        <section class="page-title-blog">
+            <h1><span class="before-letter"></span>BLOG<span class="last-letter"></span></h1>
+        </section>
+
         <!-- PAGE BLOG -->
         <section class="page-blog">
+            <input id="all" name="categories" value="all" type="radio" checked>
+            <input id="web-development" name="categories" value="web-development" type="radio">
+            <input id="vue" name="categories" value="vue" type="radio">
+            <input id="webpack" name="categories" value="webpack" type="radio">
+            <input id="git" name="categories" value="git" type="radio">
+            <input id="javascript" name="categories" value="javascript" type="radio">
+            <input id="nextjs" name="categories" value="nextjs" type="radio">
+
+            <div class="container-category">
+                <label for="all">Todos</label>
+                <label for="web-development">Desarrollo web</label>
+                <label for="vue">Vue</label>
+                <label for="webpack">Webpack</label>
+                <label for="git">Git</label>
+                <label for="javascript">JavaScript</label>
+                <label for="nextjs">Next JS</label>
+            </div>
 
             <div class="page-blog-articles">
-                <a href="#" class="article-a">
-                    <article class="article article-blog"> 
+                <a href="#" class="article-a" data-category="web-development">
+                    <article class="article article-blog""> 
                         <picture class="article-img">
                             <img src="assets/blog-assets/chrome-devtools.jpg" alt="">
                         </picture>
@@ -56,7 +78,7 @@
                     </article>
                 </a>
 
-                <a href="#" class="article-a">
+                <a href="#" class="article-a" data-category="web-development vue">
                     <article class="article article-blog"> 
                         <picture class="article-img">
                             <img src="assets/blog-assets/vuejs.jpg" alt="">
@@ -69,7 +91,7 @@
                     </article>
                 </a>
 
-                <a href="#" class="article-a">
+                <a href="#" class="article-a" data-category="web-development webpack">
                     <article class="article article-blog"> 
                         <picture class="article-img">
                             <img src="assets/blog-assets/webpack.jpg" alt="">
@@ -82,7 +104,7 @@
                     </article>
                 </a>
 
-                <a href="#" class="article-a">
+                <a href="#" class="article-a" data-category="web-development git">
                     <article class="article article-blog"> 
                         <picture class="article-img">
                             <img src="assets/blog-assets/git.jpg" alt="">
@@ -95,7 +117,7 @@
                     </article>
                 </a>
 
-                <a href="#" class="article-a">
+                <a href="#" class="article-a" data-category="web-development javascript">
                     <article class="article article-blog"> 
                         <picture class="article-img">
                             <img src="assets/blog-assets/javascript.jpg" alt="">
@@ -108,7 +130,7 @@
                     </article>
                 </a>
 
-                <a href="#" class="article-a">
+                <a href="#" class="article-a" data-category="web-development nextjs">
                     <article class="article article-blog"> 
                         <picture class="article-img">
                             <img src="assets/blog-assets/next.jpg" alt="">
