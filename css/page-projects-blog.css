@@ -1,4 +1,4 @@
-.page-title-projects, .page-title-blog {
+.page-projects-title, .page-blog-title {
     width: 100%;
     margin: 0;
     padding: 4rem 0rem 0rem 8rem;
@@ -10,7 +10,7 @@
     -o-transition: all .5s;
 }
 
-.page-title-projects h1, .page-title-blog h1 {
+.page-projects-title h1, .page-blog-title h1 {
     display: inline-block;
     position: relative;
     color: var(--white-color);
@@ -19,7 +19,7 @@
     font-size: 7.2rem;
 }
 
-.page-title-projects h1 .before-letter::before, .page-title-blog h1 .before-letter::before {
+.page-projects-title h1 .before-letter::before, .page-blog-title h1 .before-letter::before {
     content: "<h1>";
     position: absolute;
     top: -3.2rem;
@@ -29,7 +29,7 @@
     font-size: 2.8rem;
 }
 
-.page-title-projects h1 .last-letter::after, .page-title-blog h1 .last-letter::after {
+.page-projects-title h1 .last-letter::after, .page-blog-title h1 .last-letter::after {
     position: relative ;
     content: "</h1>";
     left: 1.2rem;
@@ -151,13 +151,13 @@ input[type="radio"] {
 }
 
 @media (max-width: 690px) {
-    .page-title-projects, .page-title-blog {
+    .page-projects-title, .page-blog-title {
         padding: 4rem 0 2rem 2rem;
     }
-    .page-title-projects h1, .page-title-blog h1 {
+    .page-projects-title h1, .page-blog-title h1 {
         font-size: 4.2rem;
     }
-    .page-title-projects h1 .before-letter::before, .page-title-blog h1 .before-letter::before {
+    .page-projects-title h1 .before-letter::before, .page-title-blog h1 .before-letter::before {
         top: -4rem;
         left: 0;
     }
@@ -181,7 +181,7 @@ input[type="radio"] {
     .page-blog .page-blog-articles {
         grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
     }
-    .page-title-projects h1 .last-letter::after, .page-title-blog h1 .last-letter::after {
+    .page-projects-title h1 .last-letter::after, .page-blog-title h1 .last-letter::after {
         position: absolute;
         top: 5rem;
         left: 0;
