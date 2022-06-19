@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="./index.css"/>
 
     <title>Alexis Paez | Frontend Developer</title>
     <meta property="og:title" content="Alexis Paez | Frontend Developer">
@@ -32,12 +31,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/ap-logo.png">
     <link rel="icon" href="./assets/ap-logo.png">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=La+Belle+Aurore&display=swap" rel="stylesheet"> 
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script async src="https://code.iconify.design/2/2.2.1/iconify.min.js" defer></script>
-    <script defer src="./index.js"></script>
+    <script defer src="swiper.js"></script>
+    <script async src="./index.js"></script>
+    <script async src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=La+Belle+Aurore&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header>
@@ -58,15 +57,15 @@
                 <li class="nav-menu-item"><a href="./index.html#section-contact" class="nav-menu-link underlined">Contacto</a></li>
             </ul>
 
-            <button aria-label="menu" class="toggle">
+            <button aria-label="menu" class="toggle" role="button">
                 <span class="iconify" data-icon="heroicons-solid:menu-alt-3"></span>
             </button>
         </nav>
     </header>
 
-    <main>
+    <main role="main"
         <!-- BIOGRAPHY -->
-        <section class="section-biography">
+        <section class="section-biography" aria-labelledby="biography">
             <div class="biography-info">
                 <h1>Hi, I’m <span>Alexis Paez<span class="last-letter"></span></span></h1>
                 <h2>Front End Developer / UI Designer<span class="last-letter"></span></h2>
@@ -85,14 +84,14 @@
             </div>
 
             <picture class="biography-avatar">
-                <img loading="lazy" src="./assets/ap-avatar.png" alt="Avatar del autor del sitio web">
+                <img src="./assets/ap-avatar.webp" alt="Avatar del autor del sitio web">
             </picture>
         </section>
 
         <!-- FEATURED PROJECT -->
-        <section class="section-featured-project">
+        <section class="section-featured-project" aria-labelledby="featured-project">
             <picture class="featured-project-img">
-                <img loading="lazy" src="./assets/projects-assets/youtube-clone-top.webp" alt="Imagen de Youtube clone">
+                <img src="./assets/projects-assets/youtube-clone-top.webp" alt="Imagen de Youtube clone">
             </picture>
 
             <div class="featured-project-info">
@@ -124,7 +123,7 @@
         <hr>
 
         <!-- PROJECTS -->
-        <section class="section-articles">
+        <section class="section-articles" aria-labelledby="projects">
             <div class="section-articles-top">
                 <h2>PROJECTOS</h2>
                 <div class="arrow-buttons">
@@ -141,7 +140,7 @@
             <div class="swiper-wrapper articles">
                 <article class="swiper-slide article article-project">
                     <picture class="article-img">
-                        <img loading="lazy" src="./assets/projects-assets/youtube-clone.webp" alt="Imagen de Youtube clone">
+                        <img src="./assets/projects-assets/youtube-clone.webp" alt="Imagen de Youtube clone">
                     </picture>
 
                     <div class="article-info">
@@ -170,7 +169,7 @@
 
                 <article class="swiper-slide article article-project">
                     <picture class="article-img">
-                        <img loading="lazy" src="./assets/projects-assets/twitter-clone.webp" alt="Imagen de Twitter clone">
+                        <img src="./assets/projects-assets/twitter-clone.webp" alt="Imagen de Twitter clone">
                     </picture>
 
                     <div class="article-info">
@@ -193,7 +192,7 @@
                     </div>
                 </article>
                 
-                <a href="projects.html" class="swiper-slide see-more-button">
+                <a href="projects.html" class="swiper-slide see-more-button" aria-label="enlace a proyectos">
                     <span class="iconify" data-icon="heroicons-solid:view-grid-add"></span>
                 </a>
             </div>
@@ -203,7 +202,7 @@
         <hr>
 
         <!-- BLOG    -->
-        <section class="section-articles">
+        <section class="section-articles" aria-labelledby="articles">
             <div class="section-articles-top">
                 <h2>BLOG</h2>
                 <div class="arrow-buttons">
@@ -226,7 +225,7 @@
                         
                         <div class="article-info">
                             <h3 class="article-title">Novedades en DevTools (Chrome 103)</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-17">Junio 17, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -239,7 +238,7 @@
 
                         <div class="article-info">
                             <h3 class="article-title">Desarrollo basado en Componentes con Vue.js</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -252,7 +251,7 @@
 
                         <div class="article-info">
                             <h3 class="article-title">Primeros pasos con Webpack</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -265,7 +264,7 @@
                         
                         <div class="article-info">
                             <h3 class="article-title">Buenas prácticas para escribir commits en Git</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -278,7 +277,7 @@
 
                         <div class="article-info">
                             <h3 class="article-title">Cómo usar async/await con el método .map de los Arrays</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -291,12 +290,12 @@
 
                         <div class="article-info">
                             <h3 class="article-title">Cómo usar rutas absolutas en los imports en Next.js</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
 
-                <a href="blog.html" class="swiper-slide see-more-button">
+                <a href="blog.html" class="swiper-slide see-more-button" aria-label="enlace al blog">
                     <span class="iconify" data-icon="heroicons-solid:view-grid-add"></span>
                 </a>
             </div>
@@ -306,7 +305,7 @@
         <hr>
 
         <!-- ABOUT -->
-        <section id="section-about" class="section-about">
+        <section id="section-about" class="section-about" aria-labelledby="about">
             <div class="section-about-top">
                 <h2>SOBRE MÍ</h2>
             </div>
@@ -383,7 +382,7 @@
         <hr>
 
         <!-- SERVICES -->
-        <section id="section-services" class="section-services">
+        <section id="section-services" class="section-services" aria-labelledby="services">
             <div class="section-services-top">
                 <h2>SERVICIOS</h2>
             </div>
@@ -401,29 +400,29 @@
         <hr>
 
         <!-- CONTACT -->
-        <section id="section-contact" class="section-contact">
+        <section id="section-contact" class="section-contact" aria-labelledby="contact">
             <div class="section-contact-top">
                 <h2>CONTACTO</h3>
                 <p>Estoy interesado en oportunidades freelance y la posibilidad de unirme a un equipo de desarrolladores. Sin embargo, si tienes otra petición o pregunta, no dudes en utilizar el formulario.</p>
             </div>
 
-            <form id="form" class="form" action="https://formspree.io/f/mknyekbv" method="POST">
+            <form id="form" class="form" action="https://formspree.io/f/mknyekbv" method="POST" role="form">
                 <div class="name">
                     <label for="name">Nombre</label>
-                    <input id="name" name="name" type="text" placeholder="Tu nombre" required pattern="[A-Za-z]">
+                    <input id="name" name="name" type="text" placeholder="Tu nombre" aria-labelledby="name" required pattern="[A-Za-z]">
                 </div>
 
                 <div class="email">
                     <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="persona@ejemplo.com" required pattern="[A-Za-z]">  
+                    <input id="email" name="email" type="email" placeholder="persona@ejemplo.com" aria-labelledby="email" required pattern="[A-Za-z]">  
                 </div>
 
                 <div class="message">
                     <label for="massage">Mensaje</label>
-                    <textarea id="massage" name="message" placeholder="Deja tu mensaje.." required pattern="[A-Za-z]"></textarea>
+                    <textarea id="massage" name="message" placeholder="Deja tu mensaje.." aria-labelledby="mesagge" required pattern="[A-Za-z]"></textarea>
                 </div>
 
-                <button class="submit" type="submit">ENVIAR</button>
+                <button class="submit" type="submit" aria-label="submit" role="button">ENVIAR</button>
             </form>
         </section>
     </main>

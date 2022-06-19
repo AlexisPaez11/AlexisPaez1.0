@@ -61,7 +61,8 @@ a {
     text-decoration: none;
 }
 
-/* ____________HEADER CSS_____________ */
+
+/* ____________ HEADER _____________ */
 header {
     width: 100%;
     position: sticky;
@@ -162,7 +163,7 @@ nav .toggle {
 }
 
 
-/* ____________BIOGRAPHY _____________ */
+/* ____________ BIOGRAPHY _____________ */
 /* SECTION */
 .section-biography {
     width: 100%;
@@ -318,7 +319,7 @@ nav .toggle {
 }
 
 
-/* ____________FEATURED PROJECT _____________ */
+/* ____________ FEATURED PROJECT _____________ */
 .section-featured-project {
     width: 100%;
     padding: 4rem 8.0rem;
@@ -1077,259 +1078,6 @@ nav .toggle {
 }
 
 
-/* ____________ PAGE PROJECTS/BLOG _____________ */
-.page-projects-title, .page-blog-title {
-    width: 100%;
-    margin: 0;
-    padding: 4rem 0rem 0rem 8rem;
-    display: grid;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-}
-.page-projects-title h2, .page-blog-title h2 {
-    display: inline-block;
-    position: relative;
-    color: var(--white-color);
-    font-family: 'Inter', sans-serif;
-    font-size: 4.8rem;
-    font-weight: 900;
-}
-.page-projects-title h2 .before-letter::before, .page-blog-title h2 .before-letter::before {
-    content: "<h1>";
-    position: absolute;
-    top: -3.2rem;
-    left: 0;
-    color: var(--gray4-color);
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 2.8rem;
-}
-.page-projects-title h2 .last-letter::after, .page-blog-title h2 .last-letter::after {
-    position: relative ;
-    content: "</h1>";
-    left: 1.2rem;
-    top: 0;
-    color: var(--gray4-color);
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 2.8rem;
-}
-/* PAGE PROJECTS */
-.page-projects {
-    width: 100%;
-    margin: 0rem 0;
-    padding: 2rem 8rem 4rem 8rem;
-    display: grid;
-    gap: 4rem;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-}
-.page-projects .page-projects-articles {
-    display: grid;
-    grid-auto-flow: row;
-    justify-content: left;
-    grid-template-columns: repeat(auto-fill, minmax(31.6rem, 1fr));
-    gap: 2rem;
-}
-/* PAGE BLOG */
-.page-blog {
-    width: 100%;
-    margin: 0rem 0;
-    padding: 2rem 8rem 4rem 8rem;
-    display: grid;
-    gap: 4rem;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-}
-.page-blog .page-blog-articles {
-    display: grid;
-    grid-auto-flow: row;
-    justify-content: left;
-    grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
-    gap: 2rem;
-}
-.page-projects .page-projects-articles .article, .page-blog .page-blog-articles .article {
-    width: 100%;  
-}
-
-/* SYSTEM FILTER */
-input[type="radio"] {
-    display: none;
-}
-.container-category {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.container-category label {
-    cursor: pointer;
-    padding: 1.2rem 2.2rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--gray5-color);
-    background-color: var(--gray3-color);
-    border-radius: .8rem;
-    -webkit-border-radius: .8rem;
-    -moz-border-radius: .8rem;
-    -ms-border-radius: .8rem;
-    -o-border-radius: .8rem;
-}
-.container-category label:hover {
-    background-color: #2E303990;
-}
-/* SYSTEM FILTER PROJECTS */
-[value="html"]:checked ~ .page-projects-articles .article-project:not([data-category~="html"]),
-[value="css"]:checked ~ .page-projects-articles .article-project:not([data-category~="css"]),
-[value="javascript"]:checked ~ .page-projects-articles .article-project:not([data-category~="javascript"]) {
-    display: none;
-}
-[value="all"]:checked ~ .container-category [for="all"],
-[value="html"]:checked ~ .container-category [for="html"],
-[value="css"]:checked ~ .container-category [for="css"],
-[value="javascript"]:checked ~ .container-category [for="javascript"] {
-    background-color: var(--blue-color);
-    color: var(--white-color);
-}
-/* SYSTEM FILTER BLOG */
-[value="web-development"]:checked ~ .page-blog-articles .article-a:not([data-category~="web-development"]),
-[value="vue"]:checked ~ .page-blog-articles .article-a:not([data-category~="vue"]),
-[value="webpack"]:checked ~ .page-blog-articles .article-a:not([data-category~="webpack"]),
-[value="git"]:checked ~ .page-blog-articles .article-a:not([data-category~="git"]),
-[value="javascript"]:checked ~ .page-blog-articles .article-a:not([data-category~="javascript"]),
-[value="nextjs"]:checked ~ .page-blog-articles .article-a:not([data-category~="nextjs"]) {
-    display: none;
-}
-[value="all"]:checked ~ .container-category [for="all"],
-[value="web-development"]:checked ~ .container-category [for="web-development"],
-[value="vue"]:checked ~ .container-category [for="vue"],
-[value="webpack"]:checked ~ .container-category [for="webpack"],
-[value="git"]:checked ~ .container-category [for="git"],
-[value="javascript"]:checked ~ .container-category [for="javascript"],
-[value="nextjs"]:checked ~ .container-category [for="nextjs"] {
-    background-color: var(--blue-color);
-    color: var(--white-color);
-}
-
-
-/* ____________ PAGE ARTICLE _____________ */
-.page-article {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    padding: 4rem 2rem 0rem 8rem;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-}
-.page-article main {
-    padding: 0 8rem 4rem 0;
-}
-.page-article main article h1 {
-    color: var(--white-color);
-    font-weight: 500;
-    font-size: 4.0rem;
-    line-height: 5rem;
-    margin-bottom: 1rem;
-}
-.page-article main article time {
-    color: var(--gray5-color);
-    font-weight: 500;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-}
-.page-article main article h2 {
-    color: var(--white-color);
-    font-weight: 500;
-    font-size: 3.0rem;
-    line-height: 3.6rem;
-    margin-top: 4rem;
-}
-.page-article main article h3 {
-    color: var(--white-color);
-    font-weight: 500;
-    font-size: 2.4rem;
-    line-height: 3.0rem;
-    margin-top: 2rem;
-}
-.page-article main article h4 {
-    color: var(--white-color);
-    font-weight: 500;
-    font-size: 2.2rem;
-    line-height: 2.6rem;
-    margin-top: 2rem;
-}
-.page-article main article p {
-    color: var(--gray5-color);
-    font-weight: 500;
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-    margin-top: 2rem;
-}
-.page-article main article ul {
-    padding-left: 14px;
-    margin-top: 2rem;
-}
-.page-article main article ul li {
-    color: var(--gray5-color);
-    font-weight: 500;
-    font-size: 1.78rem;
-    line-height: 2.8rem;
-    margin-top: 1rem;
-}
-.page-article main article a {
-    color: var(--blue-color);
-}
-.page-article main article a:hover {
-    text-decoration: underline;
-}
-.page-article main article img, .page-article main article video {
-    justify-self: left;
-    min-width: 26.0rem;
-    max-width: 49.0rem;
-    margin-top: 2rem;
-    border-radius: .8rem;
-    -webkit-border-radius: .8rem;
-    -moz-border-radius: .8rem;
-    -ms-border-radius: .8rem;
-    -o-border-radius: .8rem;
-}
-.page-article main article .main-img {
-    max-width: 100%;
-    border-radius: .8rem;
-    -webkit-border-radius: .8rem;
-    -moz-border-radius: .8rem;
-    -ms-border-radius: .8rem;
-    -o-border-radius: .8rem;
-}
-.page-article aside {
-    padding-left: 2rem;
-    padding-right: 0rem;
-    border-left: 1px solid var(--gray3-color);
-}
-.page-article aside .recommended-articles {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 2rem;
-}
-.page-article aside .recommended-articles .article {
-    width: 26rem;
-}
-
-
-
 /* ____________ MEDIA QUERIES _____________ */
 
 @media (max-width: 1050px) {
@@ -1345,36 +1093,6 @@ input[type="radio"] {
     }
     .featured-project-info {
         align-self: start;
-    }
-
-
-/* ____________ PAGE ARTICLE _____________ */
-    .page-article {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        padding: 4rem 8rem 0rem 8rem;
-    }
-    .page-article main {
-        padding: 0 0 4rem 0;
-    }
-    .page-article aside {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-        padding-left: 0;
-        border-left: none;
-        border-top: 1px solid var(--gray3-color);
-    }
-    .page-article aside .recommended-articles {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        width: 100%;
-        gap: 2rem;
-    }
-    .page-article aside .recommended-articles .article {
-        width: 26rem;
     }
 }
 
@@ -1478,27 +1196,6 @@ input[type="radio"] {
 }
 
 
-@media (max-width: 690px) {
-/* ____________ PAGE PROJECT _____________ */
-    .page-projects-title, .page-blog-title {
-        padding: 4rem 0 2rem 2rem;
-    }
-    .page-projects-title h2, .page-blog-title h2 {
-        font-size: 4.2rem;
-    }
-    .page-projects-title h2 .before-letter::before, .page-title-blog h2 .before-letter::before {
-        top: -4rem;
-        left: 0;
-    }
-    .page-projects, .page-blog {
-        padding: 0rem 2rem 4rem 2rem;
-    }
-    .page-projects .page-projects-articles, .page-blog .page-blog-articles {
-        justify-content: left;
-    }
-}
-
-
 @media (max-width: 650px) {
     #button-up {
         right: 20px;
@@ -1582,51 +1279,6 @@ input[type="radio"] {
 
 /* ____________ FOOTER _____________ */
     .section-footer {
-        padding: 4rem 2rem 4rem 2rem;
-    }
-
-
-/* ____________ PAGE ARTICLE _____________ */
-    .page-article {
-        padding: 4rem 2rem 0rem 2rem;
-    }
-    .page-article main article img, .page-article main article video {
-        max-width: 100%;
-    }
-}
-
-
-@media (max-width: 580px) {
-/* ____________ PAGE ARTICLE _____________ */
-    .page-article aside .recommended-articles {
-        flex-direction: column;
-    }
-    .page-article aside .recommended-articles .article {
-        width: 100%;
-    }
-
-
-/* ____________ PAGE PROJECT _____________ */
-    .page-blog .page-blog-articles {
-        grid-template-columns: repeat(auto-fill, minmax(31.6rem, 1fr));
-    }
-}
-
-
-@media (max-width: 340px) {
-/* ____________ PAGE PROJECT _____________ */
-    .page-projects .page-projects-articles {
-        grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
-    }
-    .page-blog .page-blog-articles {
-        grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
-    }
-    .page-projects-title h2 .last-letter::after, .page-blog-title h2 .last-letter::after {
-        position: absolute;
-        top: 5rem;
-        left: 0;
-    }
-    .page-projects, .page-blog {
         padding: 4rem 2rem 4rem 2rem;
     }
 }

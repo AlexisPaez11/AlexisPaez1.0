@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="./index.css"/>
 
     <title>Alexis Paez | Proyectos</title>
     <meta property="og:title" content="Alexis Paez | Proyectos">
@@ -31,13 +30,11 @@
     <meta name="color-scheme" content="dark">
     <link rel="icon" href="./assets/ap-logo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/ap-logo.png">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script async src="./index.js"></script>
+    <script async src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=La+Belle+Aurore&display=swap" rel="stylesheet"> 
-    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script async src="https://code.iconify.design/2/2.2.1/iconify.min.js" defer></script>
-    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./css/projects.css">
 </head>
 <body>
     <header>
@@ -58,24 +55,24 @@
                 <li class="nav-menu-item"><a href="./#section-contact" class="nav-menu-link underlined">Contacto</a></li>
             </ul>
 
-            <button aria-label="menu" class="toggle">
+            <button aria-label="menu" class="toggle" role="button">
                 <span class="iconify" data-icon="heroicons-solid:menu-alt-3"></span>
             </button>
         </nav>
     </header>
 
-    <main>
+    <main role="main">
         <!-- PAGE TITLE -->
-        <section class="page-projects-title">
+        <section class="page-projects-title" aria-labelledby="title">
             <h2><span class="before-letter"></span>PROYECTOS<span class="last-letter"></span></h2>
         </section>
 
         <!-- PAGE PROJECTS -->
-        <section class="page-projects">
-            <input id="all" name="categories" value="all" type="radio" checked>
-            <input id="html" name="categories" value="html" type="radio">
-            <input id="css" name="categories" value="css" type="radio">
-            <input id="javascript" name="categories" value="javascript" type="radio">
+        <section class="page-projects" aria-labelledby="projects">
+            <input id="all" name="categories" value="all" type="radio" aria-labelledby="all" checked>
+            <input id="html" name="categories" value="html" type="radio" aria-labelledby="html">
+            <input id="css" name="categories" value="css" type="radio" aria-labelledby="css">
+            <input id="javascript" name="categories" value="javascript" type="radio" aria-labelledby="javascript">
 
             <div class="container-category">
                 <label for="all">Todos</label>
@@ -87,7 +84,7 @@
             <div class="page-projects-articles">
                 <article class="article article-project" data-category="html css javascript">
                     <picture class="article-img">
-                        <img loading="lazy" src="./assets/projects-assets/youtube-clone.webp" alt="Imagen de Youtube clone">
+                        <img src="./assets/projects-assets/youtube-clone.webp" alt="Imagen de Youtube clone">
                     </picture>
 
                     <div class="article-info">
@@ -116,7 +113,7 @@
 
                 <article class="article article-project" data-category="html css">
                     <picture class="article-img">
-                        <img loading="lazy" src="./assets/projects-assets/twitter-clone.webp" alt="Imagen de Twitter clone">
+                        <img src="./assets/projects-assets/twitter-clone.webp" alt="Imagen de Twitter clone">
                     </picture>
 
                     <div class="article-info">
@@ -149,7 +146,7 @@
     
     <hr>
 
-    <footer id="section-footer" class="main-section section-footer">
+    <footer id="section-footer" class="section-footer">
         <div class="footer-info">
             <ul class="social">
                 <li class="social-item"><a aria-label="Enlace a mi canal de Youtube" accesskey="y" href="#" class="social-link"><span class="iconify" data-icon="akar-icons:youtube-fill"></span></a></li>

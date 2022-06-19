@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="./index.css"/>
 
     <title>Alexis Paez | Artículos</title>
     <meta property="og:title" content="Alexis Paez | Artículos">
@@ -32,12 +31,10 @@
     <link rel="icon" href="./assets/ap-logo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/ap-logo.png">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script async src="./index.js"></script>
+    <script async src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=La+Belle+Aurore&display=swap" rel="stylesheet"> 
-    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script async src="https://code.iconify.design/2/2.2.1/iconify.min.js" defer></script>
-    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./css/blog.css">
 </head>
 <body>
     <header>
@@ -58,27 +55,27 @@
                 <li class="nav-menu-item"><a href="./index.html#section-contact" class="nav-menu-link underlined">Contacto</a></li>
             </ul>
 
-            <button aria-label="menu" class="toggle">
+            <button aria-label="menu" class="toggle" role="button">
                 <span class="iconify" data-icon="heroicons-solid:menu-alt-3"></span>
             </button>
         </nav>
     </header>
 
-    <main>
+    <main role="main">
         <!-- PAGE TITLE -->
-        <section class="page-blog-title">
+        <section class="page-blog-title" aria-labelledby="title">
             <h2><span class="before-letter"></span>ARTÍCULOS<span class="last-letter"></span></h2>
         </section>
 
         <!-- PAGE BLOG -->
-        <section class="page-blog">
-            <input id="all" name="categories" value="all" type="radio" checked>
-            <input id="web-development" name="categories" value="web-development" type="radio">
-            <input id="vue" name="categories" value="vue" type="radio">
-            <input id="webpack" name="categories" value="webpack" type="radio">
-            <input id="git" name="categories" value="git" type="radio">
-            <input id="javascript" name="categories" value="javascript" type="radio">
-            <input id="nextjs" name="categories" value="nextjs" type="radio">
+        <section class="page-blog" aria-labelledby="articles">
+            <input id="all" name="categories" value="all" type="radio" aria-labelledby="all" checked>
+            <input id="web-development" name="categories" value="web-development" type="radio" aria-labelledby="web-development">
+            <input id="vue" name="categories" value="vue" type="radio" aria-labelledby="vue">
+            <input id="webpack" name="categories" value="webpack" type="radio" aria-labelledby="webpack">
+            <input id="git" name="categories" value="git" type="radio" aria-labelledby="git">
+            <input id="javascript" name="categories" value="javascript" type="radio" aria-labelledby="javascript">
+            <input id="nextjs" name="categories" value="nextjs" type="radio" aria-labelledby="nextjs">
 
             <div class="container-category">
                 <label for="all">Todos</label>
@@ -94,12 +91,12 @@
                 <a href="./blog-articles/novedades-en-devtools-chrome-103.html" class="article-a" data-category="web-development">
                     <article class="article article-blog""> 
                         <picture class="article-img">
-                            <img loading="lazy" src="./assets/blog-assets/chrome-103/devtools.webp" alt="Imagen de las novedades en DevTools (Chrome 103)">
+                            <img src="./assets/blog-assets/chrome-103/devtools.webp" alt="Imagen de las novedades en DevTools (Chrome 103)">
                         </picture>
                         
                         <div class="article-info">
                             <h3 class="article-title">Novedades en DevTools (Chrome 103)</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-17">Junio 17, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -107,12 +104,12 @@
                 <a href="#" class="article-a" data-category="web-development vue">
                     <article class="article article-blog"> 
                         <picture class="article-img">
-                            <img loading="lazy" src="./assets/blog-assets/vue.webp" alt="Imagen de Vue.JS">
+                            <img src="./assets/blog-assets/vue.webp" alt="Imagen de Vue.JS">
                         </picture>
 
                         <div class="article-info">
                             <h3 class="article-title">Desarrollo basado en Componentes con Vue.js</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -120,12 +117,12 @@
                 <a href="#" class="article-a" data-category="web-development webpack">
                     <article class="article article-blog"> 
                         <picture class="article-img">
-                            <img loading="lazy" src="./assets/blog-assets/webpack.webp" alt="Imagen de Webpack">
+                            <img src="./assets/blog-assets/webpack.webp" alt="Imagen de Webpack">
                         </picture>
 
                         <div class="article-info">
                             <h3 class="article-title">Primeros pasos con Webpack</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -133,12 +130,12 @@
                 <a href="#" class="article-a" data-category="web-development git">
                     <article class="article article-blog"> 
                         <picture class="article-img">
-                            <img loading="lazy" src="./assets/blog-assets/git.webp" alt="Imagen de Git">
+                            <img src="./assets/blog-assets/git.webp" alt="Imagen de Git">
                         </picture>
                         
                         <div class="article-info">
                             <h3 class="article-title">Buenas prácticas para escribir commits en Git</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -146,12 +143,12 @@
                 <a href="#" class="article-a" data-category="web-development javascript">
                     <article class="article article-blog"> 
                         <picture class="article-img">
-                            <img loading="lazy" src="./assets/blog-assets/javascript.webp" alt="Imagen de JavaScript">
+                            <img src="./assets/blog-assets/javascript.webp" alt="Imagen de JavaScript">
                         </picture>
 
                         <div class="article-info">
                             <h3 class="article-title">Cómo usar async/await con el método .map de los Arrays</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -159,12 +156,12 @@
                 <a href="#" class="article-a" data-category="web-development nextjs">
                     <article class="article article-blog"> 
                         <picture class="article-img">
-                            <img loading="lazy" src="./assets/blog-assets/next.webp" alt="Imagen de Next.JS">
+                            <img src="./assets/blog-assets/next.webp" alt="Imagen de Next.JS">
                         </picture>
 
                         <div class="article-info">
                             <h3 class="article-title">Cómo usar rutas absolutas en los imports en Next.js</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -179,7 +176,7 @@
     
     <hr>
 
-    <footer id="section-footer" class="main-section section-footer">
+    <footer id="section-footer" class="section-footer">
         <div class="footer-info">
             <ul class="social">
                 <li class="social-item"><a aria-label="Enlace a mi canal de youtube" accesskey="y" href="#" class="social-link"><span class="iconify" data-icon="akar-icons:youtube-fill"></span></a></li>
