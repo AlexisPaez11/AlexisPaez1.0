@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="../index.css"/>
 
     <title>Alexis Paez | Novedades en DevTools (Chrome 103)</title>
     <meta property="og:title" content="Alexis Paez | Novedades en DevTools (Chrome 103)">
@@ -32,12 +31,10 @@
     <link rel="icon" href="../assets/ap-logo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/ap-logo.png">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script async src="../index.js"></script>
+    <script async src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=La+Belle+Aurore&display=swap" rel="stylesheet"> 
-    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script async src="https://code.iconify.design/2/2.2.1/iconify.min.js" defer></script>
-    <script defer src="../index.js"></script>
+    <link rel="stylesheet" href="../css/article.css">
 </head>
 <body>
     <header>
@@ -58,17 +55,17 @@
                 <li class="nav-menu-item"><a href="../index.html#section-contact" class="nav-menu-link underlined">Contacto</a></li>
             </ul>
 
-            <button aria-label="menu" class="toggle">
+            <button aria-label="menu" class="toggle" role="button">
                 <span class="iconify" data-icon="heroicons-solid:menu-alt-3"></span>
             </button>
         </nav>
     </header>
     
     <div class="page-article">
-        <main>
+        <main role="main">
             <article><!-- PAGE ARTICLE -->
                 <h1>Novedades en DevTools (Chrome 103)</h1>
-                <time datetime="2022-06-20">Junio 20, 2022</time>
+                <time datetime="2022-06-17">Junio 17, 2022</time><br>
                 <img class="main-img" src="../assets/blog-assets/chrome-103/img1.webp" alt="Imagen principal de las novedades en Chrome DevTools 103">
                 
                 <br><br><br>
@@ -183,16 +180,16 @@
             </article>
         </main>
         <aside><!-- PAGE ASIDE -->
-            <section class="recommended-articles">
+            <section class="recommended-articles" aria-labelledby="recommended-articles">
                 <a href="#" class="article-a" data-category="web-development vue">
                     <article class="article article-blog"> 
                         <picture class="article-img">
-                            <img loading="lazy" src="../assets/blog-assets/vue.webp" alt="Imagen de Vue.JS">
+                            <img src="../assets/blog-assets/vue.webp" alt="Imagen de Vue.JS">
                         </picture>
 
                         <div class="article-info">
                             <h3 class="article-title">Desarrollo basado en Componentes con Vue.js</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -200,12 +197,12 @@
                 <a href="#" class="article-a" data-category="web-development nextjs">
                     <article class="article article-blog"> 
                         <picture class="article-img">
-                            <img loading="lazy" src="../assets/blog-assets/next.webp" alt="Imagen de Next.JS">
+                            <img src="../assets/blog-assets/next.webp" alt="Imagen de Next.JS">
                         </picture>
 
                         <div class="article-info">
                             <h3 class="article-title">Cómo usar rutas absolutas en los imports en Next.js</h3>
-                            <time datetime="2022-06-20">Junio 20, 2022</time>
+                            <time datetime="2022-06-18">Junio 18, 2022</time>
                         </div>
                     </article>
                 </a>
@@ -220,7 +217,7 @@
     
     <hr>
 
-    <footer id="section-footer" class="main-section section-footer">
+    <footer id="section-footer" class="section-footer">
         <div class="footer-info">
             <ul class="social">
                 <li class="social-item"><a aria-label="Enlace a mi canal de youtube" accesskey="y" href="#" class="social-link"><span class="iconify" data-icon="akar-icons:youtube-fill"></span></a></li>
