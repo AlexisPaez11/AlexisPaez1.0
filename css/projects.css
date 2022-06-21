@@ -191,7 +191,7 @@ nav .toggle {
     -ms-transition: all .5s;
     -o-transition: all .5s;
 }
-.section-articles-top h2 {
+.section-articles-top h1 {
     color: var(--white-color);
     font-weight: 900;
     font-size: 2.2rem;
@@ -360,7 +360,7 @@ nav .toggle {
     -ms-transition: all .5s;
     -o-transition: all .5s;
 }
-.page-projects-title h2 {
+.page-projects-title h1 {
     display: inline-block;
     position: relative;
     color: var(--white-color);
@@ -368,7 +368,7 @@ nav .toggle {
     font-size: 4rem;
     font-weight: 900;
 }
-.page-projects-title h2 .before-letter::before {
+.page-projects-title h1 .before-letter::before {
     content: "<h1>";
     position: absolute;
     top: -3.6rem;
@@ -377,7 +377,7 @@ nav .toggle {
     font-family: 'La Belle Aurore', cursive;
     font-size: 2.8rem;
 }
-.page-projects-title h2 .last-letter::after {
+.page-projects-title h1 .last-letter::after {
     position: relative ;
     content: "</h1>";
     left: 1.2rem;
@@ -647,7 +647,7 @@ input[type="radio"] {
     .page-projects .page-projects-articles {
         grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
     }
-    .page-projects-title h2 .last-letter::after {
+    .page-projects-title h1 .last-letter::after {
         position: absolute;
         top: 5rem;
         left: 0;
