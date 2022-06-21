@@ -73,9 +73,9 @@ header {
 nav {
     width: 100%;
     padding: 2.0rem 8.0rem;
-    display: flex;
+    /* display: grid;
     justify-content: center;
-    align-content: center;
+    align-content: center; */
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -84,8 +84,8 @@ nav {
 }
 /* NAV MENU */
 nav .nav-menu {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: column;
     place-content: center;
     column-gap: 3.2rem;
 }
@@ -167,9 +167,9 @@ nav .toggle {
 .section-articles {
     width: 100%;
     padding: 4rem 0rem 4rem 0rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: left;
     gap: 2.0rem;
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -199,9 +199,9 @@ nav .toggle {
     align-self: center;
 }
 .section-articles-top .arrow-buttons {
-    display: flex;
-    flex-direction: row;
-    column-gap: 1.0rem;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1rem;
 }
 .section-articles-top .arrow-buttons .button {
     cursor: pointer;
@@ -229,11 +229,12 @@ nav .toggle {
     justify-content: start;
 }
 .article {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: left;
+    gap: .8rem;
     width: 31.6rem;
     padding: .8rem;
-    gap: .8rem;
     background-color: var(--gray3-color);
     border-radius: .8rem;
     -webkit-border-radius: .8rem;
@@ -266,12 +267,10 @@ nav .toggle {
 }
 /* PROJECT INFO / BLOG INFO */
 .article-info {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
     gap: .8rem;
-}
-.article-blog .article-info {
-    gap: 1.2rem;
 }
 .article-project .article-info .project-title {
     text-align: left;
@@ -299,58 +298,6 @@ nav .toggle {
     font-weight: 500;
     font-size: 1.4rem;
 }
-/* PROJECT INFO TECHNOLOGIES */
-.article-technologies {
-    display: flex;
-    flex-direction: row;
-    column-gap: .8rem;
-}
-.article-technologies div {
-    list-style: none;
-    display: flex;
-    align-self: center;
-    background-color: var(--gray2-color);
-    padding: .8rem;
-    border-radius: .8rem;
-    -webkit-border-radius: .8rem;
-    -moz-border-radius: .8rem;
-    -ms-border-radius: .8rem;
-    -o-border-radius: .8rem;
-}
-.article-technologies div svg {
-    height: 1.6rem;
-    width: 1.6rem;
-}
-/* PROJECT INFO BUTTONS */
-.article-buttons {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
-    gap: .8rem;
-}
-.article-buttons .button {
-    padding: 1.2rem 2.2rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-align: center;
-    border-radius: .8rem;
-    -webkit-border-radius: .8rem;
-    -moz-border-radius: .8rem;
-    -ms-border-radius: .8rem;
-    -o-border-radius: .8rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.article-buttons .button:nth-child(1) {
-    color: var(--gray5-color);
-    background-color: var(--gray2-color);
-}
-.article-buttons .button:nth-child(2) {
-    color: var(--white-color);
-    background-color: var(--blue-color);
-}
 
 
 /* ____________ BLOG _____________ */
@@ -358,7 +305,6 @@ nav .toggle {
     width: 100%;
     margin: 0;
     padding: 4rem 0rem 0rem 8rem;
-    display: grid;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -370,13 +316,13 @@ nav .toggle {
     position: relative;
     color: var(--white-color);
     font-family: 'Inter', sans-serif;
-    font-size: 4.8rem;
+    font-size: 4rem;
     font-weight: 900;
 }
 .page-blog-title h2 .before-letter::before {
     content: "<h1>";
     position: absolute;
-    top: -3.2rem;
+    top: -3.6rem;
     left: 0;
     color: var(--gray4-color);
     font-family: 'La Belle Aurore', cursive;
@@ -423,11 +369,12 @@ input[type="radio"] {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
 }
 .container-category label {
     cursor: pointer;
     padding: 1.2rem 2.2rem;
+    margin-bottom: .8rem;
+    margin-right: .8rem;
     font-family: 'Inter', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
@@ -470,7 +417,6 @@ input[type="radio"] {
     display: flex;
     flex-direction: column;
     place-content: center;
-    gap: 2.0rem;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -479,17 +425,17 @@ input[type="radio"] {
 }
 .footer-info {
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
 }
 /* SOCIAL MEDIA */
 .social {
-    display: flex;
-    flex-direction: row;
-    column-gap: 2.4rem;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: left;
+    gap: 2.2rem;
 }
 .social .social-item {
     list-style: none;
@@ -499,12 +445,12 @@ input[type="radio"] {
 }
 .social .social-item .social-link {
     cursor: pointer;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2.8rem;
+    height: 2.8rem;
 }
 .social .social-item .social-link svg {
-    height: 2.4rem;
-    width: 2.4rem;
+    height: 100%;
+    width: 100%;
 }
 .social .social-item .social-link svg path {
     fill: var(--gray4-color);
@@ -539,7 +485,7 @@ input[type="radio"] {
     nav {
         width: 100%;
         padding: 2.0rem 0;
-        display: flex;
+        display: grid;
         justify-content: right;
         height: 7.433rem;
         transition: all .5s;
@@ -610,13 +556,6 @@ input[type="radio"] {
     .page-blog-title {
         padding: 4rem 0 2rem 2rem;
     }
-    .page-blog-title h2 {
-        font-size: 4.2rem;
-    }
-    .page-title-blog h2 .before-letter::before {
-        top: -4rem;
-        left: 0;
-    }
     .page-blog {
         padding: 0rem 2rem 4rem 2rem;
     }
@@ -668,7 +607,7 @@ input[type="radio"] {
 }
 
 
-@media (max-width: 340px) {
+@media (max-width: 355px) {
 /* ____________ BLOG _____________ */
     .page-blog .page-blog-articles {
         grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
@@ -680,5 +619,11 @@ input[type="radio"] {
     }
     .page-projects, .page-blog {
         padding: 4rem 2rem 4rem 2rem;
+    }
+
+/* ____________ FOOTER _____________ */
+    .footer-info {
+        grid-auto-flow: row;
+        gap: 3rem;
     }
 }
