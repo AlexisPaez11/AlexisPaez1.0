@@ -336,6 +336,8 @@ nav .toggle {
     -ms-border-radius: .8rem;
     -o-border-radius: .8rem;
 }
+
+/* ____________ ASIDE _____________ */
 .page-article aside {
     padding-left: 2rem;
     padding-right: 0rem;
@@ -351,6 +353,7 @@ nav .toggle {
 .page-article aside .recommended-articles .article {
     width: 100%;
 }
+
 
 
 /* ____________ FOOTER _____________ */
@@ -559,6 +562,13 @@ nav .toggle {
     }
     .page-article main article img, .page-article main article video {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    /* ____________ ASIDE _____________ */
+    .page-article aside .recommended-articles {
+        grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
     }
 }
 
